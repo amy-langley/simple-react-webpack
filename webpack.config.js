@@ -30,7 +30,7 @@ module.exports = {
   ],
   module: {
     loaders: [{
-      test: /\.js?$/,
+      test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel'
     }, {
@@ -39,6 +39,9 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
+    }, {
+      test: /\.(otf|eot|svg|ttf|woff\d?)$/,
+      loader: 'file-loader?limit=8192'
     }]
   }
 };
