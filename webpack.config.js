@@ -37,11 +37,17 @@ module.exports = {
       test: /\.json?$/,
       loader: 'json'
     }, {
-      test: /\.css$/,
-      loader: 'style!css?modules&localIdentName=[name]---[local]---[hash:base64:5]'
-    }, {
       test: /\.(otf|eot|svg|ttf|woff\d?)$/,
       loader: 'file-loader?limit=8192'
+    }, {
+      test   : /\.css$/,
+      loaders: ['style', 'css']
+    }, {
+      test: /\.scss$/,
+      loaders: ['style', 'css', 'sass?sourceMap']
+    }, {
+      test: /\.(jpg|png|gif)$/,
+      loader: 'file-loader'
     }]
   }
 };

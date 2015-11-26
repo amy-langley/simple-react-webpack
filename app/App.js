@@ -1,5 +1,6 @@
 import React from 'react';
-import styles from './App.css';
+import styles from './style/App.css';
+import './style/sample.scss';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -8,8 +9,9 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <div className={styles.app}>
-        blah blah blah blah 
+      <div className='app'>
+        <h1>simple-react-webpack</h1>
+        <p>This is sample text. Styled with SCSS and CSS! :3</p>
       </div>
     );
   }
