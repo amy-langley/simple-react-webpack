@@ -1,8 +1,32 @@
 $white: white;
+$blur-radius: 5px;
+$virtual-adjust: -7px;
 
 body {
 	color: $white;
 	background-image: url('images/galaxy.jpg');
 	background-position: 0 30%;
 	margin: 0; padding: 0;
+	font-family: 'Avenir Next', Helvetica, Arial, sans-serif;
+}
+
+.ticker {
+  margin: 2em 0;
+  padding: 3em;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.ticker::before {
+  content: "";
+  background: url(images/galaxy.jpg);
+  opacity: 0.7;
+  -webkit-filter: blur($blur-radius);
+  top: $virtual-adjust;
+  left: $virtual-adjust;
+  bottom: $virtual-adjust;
+  right: $virtual-adjust;
+  position: absolute;
+  z-index: -1;   
 }

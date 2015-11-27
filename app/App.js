@@ -11,10 +11,14 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <div className='app'>
-        <h1>simple-react-webpack</h1>
-        <p>This is sample text. Styled with SCSS and CSS! :3</p>
-        <ES6Component nice='Nice.' />
+      <div>
+        <div className='ticker'>
+          <h1>simple-react-webpack</h1>
+          <p>This is sample text. Styled with SCSS and CSS! :3</p>
+        </div>
+        <div className='app'>
+          <ES6Component nice='Nice.' />
+        </div>
       </div>
     );
   }
