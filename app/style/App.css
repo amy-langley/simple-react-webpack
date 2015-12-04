@@ -4,7 +4,14 @@
 }
 
 .app li{ 
-	line-height: 250%;
+	line-height: 24pt;
+}
+
+.app ul{
+	text-indent: 0;
+	margin: 0;
+	padding: 0;
+	padding-left: 1em;
 }
 
 .app li em{ margin-left: 0.5em; }
