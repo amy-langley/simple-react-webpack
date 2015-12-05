@@ -1,6 +1,7 @@
 # simple-react-webpack
-A nice webpack and redux / react quick start setup
+A nice react/redux quick start using webpack
 
+![Preview](http://amyrebecca.github.io/simple-react-webpack/large.png)
 
 ## Install
 `npm i`
