@@ -10,6 +10,7 @@ A nice webpack and redux / react quick start setup
 
 ## Notable Contents
 * babel for ES6 support
+* coffeescript and cjsx support
 * immutablejs
 * mocha/chai
 * postcss
