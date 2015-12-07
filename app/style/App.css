@@ -5,13 +5,15 @@
 
 .app li{ 
 	line-height: 24pt;
+	white-space: nowrap;
 }
 
 .app ul{
 	text-indent: 0;
 	margin: 0;
 	padding: 0;
-	padding-left: 1em;
+	padding-left: 1.1em;
+	overflow: hidden;
 }
 
-.app li em{ margin-left: 0.5em; }
+.app li em{ margin-left: 0.5em; white-space: nowrap; display: block; }

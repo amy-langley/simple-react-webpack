@@ -3,6 +3,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   devtool: 'eval-source-map',
@@ -26,7 +27,10 @@ module.exports = {
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify('development')
-    })
+    }),
+    new CopyWebpackPlugin([
+      { from: 'assets' }
+    ])
   ],
   resolve: {
     extensions: ['', '.js', '.jsx', '.cjsx', '.coffee'],
@@ -54,7 +58,7 @@ module.exports = {
       test: /\.scss$/,
       loaders: ['style', 'css', 'sass?sourceMap']
     }, {
-      test: /\.(jpg|png|gif|otf|eot|svg|ttf|woff\d?)$/,
+      test: /\.(jpg|png|gif|otf|eot|svg|ttf|woff\d?|json)$/,
       loader: 'file-loader'
     }
     ]
