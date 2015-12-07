@@ -1,23 +1,23 @@
 {
   "name": "webpack-express-boilerplate",
   "version": "0.1.0",
-  "description": "A boilerplate for running a Webpack workflow in Node express",
+  "description": "A webpack starter kit for React and Redux development",
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate.git"
+    "url": "https://github.com/amyrebecca/simple-react-webpack.git"
   },
   "keywords": [
     "express",
     "webpack",
     "node"
   ],
-  "author": "Christian Alfoni",
+  "author": "Amy Boyer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/christianalfoni/webpack-express-boilerplate/issues"
+    "url": "https://github.com/amyrebecca/simple-react-webpack/issues"
   },
-  "homepage": "https://github.com/christianalfoni/webpack-express-boilerplate",
+  "homepage": "https://github.com/amyrebecca/simple-react-webpack",
   "scripts": {
     "test": "",
     "start": "babel-node server",
@@ -26,11 +26,6 @@
     "jscs": "jscs ."
   },
   "dependencies": {
-    "cjsx-loader": "^2.1.0",
-    "classnames": "^2.2.0",
-    "coffee-loader": "^0.7.2",
-    "coffee-script": "^1.10.0",
-    "file-loader": "^0.8.4",
     "history": "^1.13.1",
     "immutable": "^3.7.5",
     "react": "^0.14.3",
@@ -39,9 +34,7 @@
     "react-router": "^1.0.0",
     "react-templates": "^0.3.1",
     "redux": "^3.0.4",
-    "redux-devtools": "^2.1.5",
-    "resolve-url-loader": "^1.4.2",
-    "style-loader": "^0.12.4"
+    "redux-devtools": "^2.1.5"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",
@@ -51,11 +44,16 @@
     "babel-loader": "^5.3.2",
     "babel-plugin-react-transform": "^1.0.5",
     "chai": "^3.2.0",
+    "cjsx-loader": "^2.1.0",
+    "classnames": "^2.2.0",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.10.0",
     "css-loader": "^0.19.0",
     "eslint": "^1.5.0",
     "eslint-plugin-react": "^3.4.2",
     "express": "^4.13.3",
     "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
     "html-webpack-plugin": "^1.6.1",
     "jscs": "^2.1.1",
     "jsdom": "^6.5.1",
@@ -66,6 +64,7 @@
     "postcss-loader": "^0.6.0",
     "react-addons-test-utils": "^0.14.3",
     "react-transform-hmr": "^1.0.0",
+    "resolve-url-loader": "^1.4.2",
     "rimraf": "^2.4.3",
     "sass-loader": "^3.1.2",
     "sinon": "^1.16.1",

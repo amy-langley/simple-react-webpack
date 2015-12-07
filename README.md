@@ -20,3 +20,6 @@ A nice webpack and redux / react quick start setup
 * react-templates
 * redux
 * redux-devtools
+
+## Inspired By
+https://github.com/christianalfoni/webpack-express-boilerplate/issues
