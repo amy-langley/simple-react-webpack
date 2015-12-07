@@ -33,7 +33,7 @@ module.exports = {
     ])
   ],
   resolve: {
-    extensions: ['', '.js', '.jsx', '.cjsx', '.coffee'],
+    extensions: ['', '.js', '.jsx', '.cjsx', '.coffee', '.styl', '.css', '.scss', '.sass'],
     modulesDirectories: ['.', 'node_modules']
   },
   module: {
@@ -55,12 +55,14 @@ module.exports = {
       test   : /\.css$/,
       loaders: ['style', 'css']
     }, {
-      test: /\.scss$/,
+      test: /\.s[ac]ss$/,
       loaders: ['style', 'css', 'sass?sourceMap']
+    }, { 
+      test: /\.styl$/, 
+      loader: 'style-loader!css-loader!stylus-loader' 
     }, {
       test: /\.(jpg|png|gif|otf|eot|svg|ttf|woff\d?|json)$/,
       loader: 'file-loader'
-    }
-    ]
+    }]
   }
 };

@@ -1,6 +1,7 @@
 import React from 'react'
-import styles from 'style/App.css'
-import 'style/sample.scss'
+import styles from 'style/App'
+import 'style/sample'
+import 'style/stylus'
 import ES6Component from 'components/es6-component'
 import CoffeeScriptComponent from 'components/coffeescript-component'
 
@@ -39,6 +40,7 @@ export default class App extends React.Component {
             <li>CoffeeScript and CJSX</li>
             <li>Immutable.js</li>
             <li>SASS and SCSS</li>
+            <li>Stylus</li>
             <li>Asset pipelining</li>
           </ul>
           </section>
