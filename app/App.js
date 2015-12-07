@@ -38,7 +38,8 @@ export default class App extends React.Component {
             <li>Babel ES6 and JSX</li>
             <li>CoffeeScript and CJSX</li>
             <li>Immutable.js</li>
-            <li>SASS (SCSS)</li>
+            <li>SASS and SCSS</li>
+            <li>Asset pipelining</li>
           </ul>
           </section>
         </div>
