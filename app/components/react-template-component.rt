@@ -1,0 +1,3 @@
+<li class="foo">
+	This is a component defined using React Templates! <em class="nice">{this.props.nice}</em>
+</li>

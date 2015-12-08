@@ -4,6 +4,7 @@ import 'style/sample'
 import 'style/stylus'
 import ES6Component from 'components/es6-component'
 import CoffeeScriptComponent from 'components/coffeescript-component'
+import ReactTemplateComponent from 'components/react-template-component'
 
 export default class App extends React.Component {
   constructor(props) {
@@ -23,6 +24,7 @@ export default class App extends React.Component {
           <ul>
             <ES6Component nice='Nice.' />
             <CoffeeScriptComponent nice='Very nice.' />
+            <ReactTemplateComponent nice='Weird but nice.' />
           </ul>
           </section>
           <section className='features column'>

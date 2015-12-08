@@ -60,8 +60,11 @@ module.exports = {
     }, { 
       test: /\.styl$/, 
       loader: 'style-loader!css-loader!stylus-loader' 
+    }, { 
+      test: /\.rt/, 
+      loader: "react-templates-loader" 
     }, {
-      test: /\.(jpg|png|gif|otf|eot|svg|ttf|woff\d?|json)$/,
+      test: /\.(jpg|png|gif|otf|eot|svg|ttf|woff\d?)$/,
       loader: 'file-loader'
     }]
   }
