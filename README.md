@@ -22,6 +22,9 @@ A nice react/redux quick start using webpack
 * react-templates
 * redux
 * redux-devtools
+* stylus
+* scss / sass
+* asset pipelining
 
 ## Inspired By
 https://github.com/christianalfoni/webpack-express-boilerplate/issues
