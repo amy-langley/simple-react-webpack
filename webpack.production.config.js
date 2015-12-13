@@ -36,20 +36,40 @@ module.exports = {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
   ],
+  resolve: {
+    extensions: ['', '.js', '.jsx', '.cjsx', '.coffee', '.styl', '.css', '.scss', '.sass'],
+    modulesDirectories: ['.', 'node_modules']
+  },
   module: {
     loaders: [{
-      test: /\.js?$/,
+      test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'babel'
+    }, {
+      test: /\.cjsx$/, 
+      exclude: /node_modules/,
+      loaders: ['coffee', 'cjsx']
+    }, { 
+      test: /\.coffee$/, 
+      loader: 'coffee' 
     }, {
       test: /\.json?$/,
       loader: 'json'
     }, {
-      test: /\.css$/,
-      loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
+      test   : /\.css$/,
+      loaders: ['style', 'css']
+    }, {
+      test: /\.s[ac]ss$/,
+      loaders: ['style', 'css', 'sass?sourceMap']
+    }, { 
+      test: /\.styl$/, 
+      loader: 'style-loader!css-loader!stylus-loader' 
+    }, { 
+      test: /\.rt/, 
+      loader: "react-templates-loader" 
+    }, {
+      test: /\.(jpg|png|gif|otf|eot|svg|ttf|woff\d?)$/,
+      loader: 'file-loader'
     }]
-  },
-  postcss: [
-    require('autoprefixer')
-  ]
+  }
 };
