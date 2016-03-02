@@ -22,7 +22,6 @@ module.exports = {
       inject: 'body',
       filename: 'index.html'
     }),
-    new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.DefinePlugin({
@@ -42,12 +41,12 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel'
     }, {
-      test: /\.cjsx$/, 
+      test: /\.cjsx$/,
       exclude: /node_modules/,
       loaders: ['coffee', 'cjsx']
-    }, { 
-      test: /\.coffee$/, 
-      loader: 'coffee' 
+    }, {
+      test: /\.coffee$/,
+      loader: 'coffee'
     }, {
       test: /\.json?$/,
       loader: 'json'
@@ -57,12 +56,12 @@ module.exports = {
     }, {
       test: /\.s[ac]ss$/,
       loaders: ['style', 'css', 'sass?sourceMap']
-    }, { 
-      test: /\.styl$/, 
-      loader: 'style-loader!css-loader!stylus-loader' 
-    }, { 
-      test: /\.rt/, 
-      loader: "react-templates-loader" 
+    }, {
+      test: /\.styl$/,
+      loader: 'style-loader!css-loader!stylus-loader'
+    }, {
+      test: /\.rt/,
+      loader: "react-templates-loader"
     }, {
       test: /\.(jpg|png|gif|otf|eot|svg|ttf|woff\d?)$/,
       loader: 'file-loader'
